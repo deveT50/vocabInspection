@@ -1,7 +1,7 @@
 # coding: utf-8
 import heapq
 import itertools
-
+#http://qiita.com/masashi127/items/0c794e28f4b295ad82c6
 
 def astar(start, goal):
     # 探索した座標を格納する経路リスト
