@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>mapping location to words</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/static/client.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+    <div>
+        <h2>word2vecのmodelを探索する</h2>
+        <p>クリックした位置の単語から「ゴール単語」までの最短パスを表示します。<br>「スタート/ゴール単語」を入力して[送信]でもOK。modelにない単語は適当に変換されます。</p>
+    </div>
+    <div id="result">
+
+        <table id="params">
+            <tr>
+                <td>スタート座標（ｘ，ｙ）</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ゴール座標（ｘ，ｙ）</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            
+        </table>
+    
+
+        <table id="setting">
+
+            <tr>
+                <td>スタート単語</td>
+                <td><input name="text" id="starttxt" type="text" value="" /><br></td>
+            </tr>
+            <tr>
+                <td>ゴール単語</td>
+                <td><input name="text" id="goaltxt" type="text" value="スマートフォン" /><br></td>
+            <tr>
+                <td>パスの単語数</td>
+                <td><input id="spinner" type="number" value="5" max="10" min="1" /><br></td>
+                <td><input id="postButton" type="button" value="送信" onClick="setBtnFlag()"></td>
+            </tr>
+
+        </table>
+    
+
+        <p id="path"></p>
+
+        
+    </div>
+    <canvas id="cv" width="400" height="400"></canvas>
+    <div id="map">
+        <p></p>
+
+
+    </div>
+
+
+</body>
+
+    
+
+</html>

@@ -1,0 +1,15 @@
+01_mecab_devider.py~
+02_word2vec_train.py~
+Procfile~
+astar.py~
+requirements.txt~
+vocab_map_2d.py~
+wakati_text.txt~
+word2vec_map.py~
+.gitignore~
+README.md~
+astar.pyc
+mecab_devider.pyc
+word2vec_map.pyc
+
+
