@@ -21,6 +21,7 @@ gensim.models.word2vecのCBOWで作成した言語モデル（２次元）内の
 * Procfile ・・・・・・・・・・・・・ Herokuに対してアプリケーションの種別を指定するファイル  
 * requirements.txt ・・・・・ Herokuに対してアプリケーションが使用するモジュールを指定するファイル  
 * runtime.txt ・・・・・・・・・・ Herokuに対してアプリケーションが使用する言語を指定するファイル  
+
 ####アルゴリズム等
 * astar.py ・・・・・・・・・・・・・ A-Starアルゴリズムのモジュール。 <http://qiita.com/masashi127/items/0c794e28f4b295ad82c6> を一部改変して使用した。  
 * out.model ・・・・・・・・・・・・ gensim.models.word2vecで作成した言語モデル。データはlivedoor ニュースコーパス <http://www.rondhuit.com/download.html#ldcc> の一部を使用した。  
